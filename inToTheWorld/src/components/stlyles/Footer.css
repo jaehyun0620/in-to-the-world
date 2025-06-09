@@ -1,0 +1,40 @@
+@import '/src/modernReset.css';
+
+:root {
+  --footer-bg-start: #0f172a;       /* 짙은 네이비 블루 */
+  --footer-bg-mid: #1e40af;         /* 중간 푸른색 */
+  --footer-text: #cbd5e1;           /* 밝은 회색 텍스트 */
+  --footer-accent: #60a5fa;         /* 푸른 포인트 컬러 */
+}
+
+.footer-container {
+  color: var(--footer-text);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  background: linear-gradient(90deg, var(--footer-bg-start), var(--footer-bg-mid), var(--footer-bg-start));
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container h2 {
+  padding: 12px;
+  font-size: 20px;
+  color: var(--footer-accent);
+  font-weight: 500;
+}
+
+.develop-info {
+  display: contents;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.develop-info p {
+  margin-inline: 40px;
+  max-width: 700px;
+}
